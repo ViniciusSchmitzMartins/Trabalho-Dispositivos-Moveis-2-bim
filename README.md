@@ -35,11 +35,6 @@ Uso de uma função `renderizarMensagem` que retorna JSX.
 ### 8. Layout com Múltiplos Componentes
 Criação dos componentes `Topo`, `Meio` e `Base` simulando estrutura de página completa.
 
-## 📁 Estrutura recomendada
-
-src/ ├─ components/ │ ├─ Mensagem.tsx │ ├─ Cabecalho.tsx │ ├─ Conteudo.tsx │ ├─ Rodape.tsx │ ├─ Topo.tsx │ ├─ Meio.tsx │ ├─ Base.tsx │ ├─ App.tsx │ ├─ main.tsx
-
-
 ## 📦 Como executar o projeto
 
 ```bash
