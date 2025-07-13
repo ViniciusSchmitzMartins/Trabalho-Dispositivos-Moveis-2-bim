@@ -1,69 +1,50 @@
-# React + TypeScript + Vite
+# Meu Primeiro App React com Vite e TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como exercício introdutório à biblioteca **React**, utilizando o bundler **Vite** e a linguagem **TypeScript**. O objetivo é praticar conceitos fundamentais de JSX, componentes, eventos e estrutura de layout.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- TypeScript
+- Vite
 
-## Expanding the ESLint configuration
+## 🧠 Exercícios incluídos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Estrutura do Projeto e Comentários
+Criação de projeto com Vite + TypeScript e adição de um título no `App.tsx` com comentários explicativos.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 2. JSX com Template Expressions
+Uso de variáveis dentro do JSX para renderizar a frase:
+> Olá, meu nome é Ana e nasci em 2005.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 3. Criação e Importação de Componente
+Criação do componente `Mensagem.tsx` e sua importação no `App.tsx`.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 4. Hierarquia de Componentes
+Organização de três componentes (`Cabecalho`, `Conteudo` e `Rodape`) para montar a estrutura de uma página.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 5. Evento de Clique com Função Inline
+Botão com `onClick` direto que exibe um `alert`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 6. Evento de Clique com Função Externa
+Botão com `onClick` que chama a função `executarAcao`, imprimindo no console uma mensagem.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 7. Função de Renderização
+Uso de uma função `renderizarMensagem` que retorna JSX.
+
+### 8. Layout com Múltiplos Componentes
+Criação dos componentes `Topo`, `Meio` e `Base` simulando estrutura de página completa.
+
+## 📁 Estrutura recomendada
+
+src/ ├─ components/ │ ├─ Mensagem.tsx │ ├─ Cabecalho.tsx │ ├─ Conteudo.tsx │ ├─ Rodape.tsx │ ├─ Topo.tsx │ ├─ Meio.tsx │ ├─ Base.tsx │ ├─ App.tsx │ ├─ main.tsx
+
+
+## 📦 Como executar o projeto
+
+```bash
+# Instalar dependências
+npm install
+
+# Executar em ambiente de desenvolvimento
+npm run dev
